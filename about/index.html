@@ -46,11 +46,93 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="./">Classes</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#res-hoc-lacriment-victa-tenens-crepitantibus-peto">Res hoc lacriment victa tenens crepitantibus peto</a>
+    <li class="toctree-l2"><a class="reference internal" href="#architectural-overview">Architectural Overview</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#game-engine">Game Engine</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#irae-samos-a-vastum">Irae Samos a vastum</a>
+    <li class="toctree-l3"><a class="reference internal" href="#physics-engine">Physics Engine</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#pocula-totiens-dabat-tutus-si-temeraria-hirsuti">Pocula totiens dabat tutus si temeraria hirsuti</a>
+    <li class="toctree-l3"><a class="reference internal" href="#graphics-engine">Graphics Engine</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#game-logic">Game Logic</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#networking">Networking</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#user-interface-ui">User Interface (UI)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#code-structure-and-organization">Code Structure and Organization</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#directory-structure">Directory Structure</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#classes">Classes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#core">Core</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#description">Description :</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#methodes-principales">Méthodes Principales :</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#exemple-dutilisation">Exemple d'Utilisation :</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#acomponent">AComponent</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#description_1">Description :</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#entity">Entity</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#description_2">Description :</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#methodes-principales_1">Méthodes Principales :</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#exemple-dutilisation_1">Exemple d'Utilisation :</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#entitymanager">EntityManager</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#description_3">Description :</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#methodes-principales_2">Méthodes Principales :</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#exemple-dutilisation_2">Exemple d'Utilisation :</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#shootingstar">ShootingStar</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#description_4">Description :</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#methodes-principales_3">Méthodes Principales :</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#exemple-dutilisation_3">Exemple d'Utilisation :</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#star">Star</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#description_5">Description :</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#methodes-principales_4">Méthodes Principales :</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#exemple-dutilisation_4">Exemple d'Utilisation :</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#code-conventions-and-best-practices">Code Conventions and Best Practices</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tutorials-and-how-tos">Tutorials and How-To's</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#contribution-guidelines">Contribution Guidelines</a>
     </li>
     </ul>
                 </li>
@@ -94,43 +176,345 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="tergo-dispar-erat-quod-vinctoque-ducunt-aures">Tergo dispar erat quod vinctoque ducunt aures</h1>
-<h2 id="res-hoc-lacriment-victa-tenens-crepitantibus-peto">Res hoc lacriment victa tenens crepitantibus peto</h2>
-<p>Lorem markdownum solito fulserunt paratis dolori popularia sospes. Deus nec
-iubet verba hortus! Iactavit totusque mihi partior thalamos stabantque nobis
-inmenso: manes in velaque, non Hecate ventisque curam: fuit. Comes et geminas
-terris.</p>
-<blockquote>
-<p>Passim et Achivos reseminet meruere quique in tendebat per. Potes gaudet,
-flectere Clytien: dum figuras, hiemsque, in visum Tenedonque care Peleu, et.
-Duos sacra <a href="http://undis-nato.org/urbis">similem</a>! <em>Suarum quicquam</em> dignus
-flet semine naribus visa, nostras positi Sisyphon triumpha.</p>
-</blockquote>
-<p>Deinde frigus <em>tu terrae risus</em>, ne manus quaerit in actis succedere paulum
-primum, sibi meritumque figuram habet. Teque ex formamque illius Circaea, sis
-vicinum obsceno undis: mota nolit sol; expulsi, nacta. Haec suo iubebit adest
-comitantibus tamen, finge sanguine prodita; Ide Iuppiter sed medio est certe
-haud.</p>
-<h2 id="irae-samos-a-vastum">Irae Samos a vastum</h2>
-<p>Mox hic deseruitque domo. Funereus Trachinia tellus in <strong>numina</strong> Gangetica
-pertimuit pater munimine inundet novaeque, spes oscula Ilion similisque Caune.</p>
-<p>Non exhortari strepitum ac percussis mitis crine, <em>et amans</em> canes signorum
-oscula; natorum videoque. Species nisi, quo conscia sustinet Oceano perque.</p>
-<h2 id="pocula-totiens-dabat-tutus-si-temeraria-hirsuti">Pocula totiens dabat tutus si temeraria hirsuti</h2>
-<p>A patria Thybris cedere faciet tempora repulsa in quam donisque cum superas;
-nomen. Ego matre tibi innabilis referat numina apertum te cura profuit voveas
-electarumque stabis.</p>
-<ol>
-<li>Genitor est actae subcubuisse quae amittere</li>
-<li>Inrorant et devovet Dianae</li>
-<li>Peleus vidit reddit vulnera haeserunt docebo tetigere</li>
-<li>In ad fata necopinum caede</li>
-</ol>
-<p>Regia adstricta in amnes alit tauros lumina pectora: byblis ulla obsessae te
-donasse. Forte superata prece, mota diversa Agenorides, quae tanto, arbor ego;
-diu illo reguntur et. Antro in obnoxia, flamma Herse agro ventis tollere ea viam
-Scythiam qualis si patre. Acris fundebat tradit. Non quid victorque et virgam,
-solidam non, vivacem Cretenque mutatus?</p>
+                <h1 id="architecture-and-code-structure">Architecture and Code Structure</h1>
+<p>In this section, we will provide an overview of the architectural design and code structure of the R-TYPE game project. Understanding the high-level architecture and organization of the codebase is essential for anyone looking to contribute to or work on the project.</p>
+<h2 id="architectural-overview">Architectural Overview</h2>
+<p>The R-TYPE game follows a typical game architecture, consisting of several key components and systems that work together to create the gameplay experience. Here's an overview of the game's architecture:</p>
+<h3 id="game-engine">Game Engine</h3>
+<ul>
+<li>The core of the game, responsible for managing game loops, rendering, and input handling.</li>
+<li>Provides the foundation for game mechanics and systems.</li>
+</ul>
+<h3 id="physics-engine">Physics Engine</h3>
+<ul>
+<li>Manages the physics simulation for player movement, enemy behavior, and interactions.</li>
+<li>Integrates collision detection and response.</li>
+</ul>
+<h3 id="graphics-engine">Graphics Engine</h3>
+<ul>
+<li>Handles rendering of game assets, including characters, enemies, and background elements.</li>
+<li>Supports sprite animation and special effects.</li>
+</ul>
+<h3 id="game-logic">Game Logic</h3>
+<ul>
+<li>Contains the high-level game rules and logic.</li>
+<li>Coordinates interactions between players, enemies, and game objects.</li>
+</ul>
+<h3 id="networking">Networking</h3>
+<ul>
+<li>Enables multiplayer functionality by handling network communication.</li>
+<li>Synchronizes game state between clients and the server.</li>
+</ul>
+<h3 id="user-interface-ui">User Interface (UI)</h3>
+<ul>
+<li>Manages the in-game user interface, including menus, HUD elements, and player status.</li>
+<li>Provides a seamless and intuitive user experience.</li>
+</ul>
+<h2 id="code-structure-and-organization">Code Structure and Organization</h2>
+<p>Our C++ codebase is organized following best practices to maintain clarity, modularity, and extensibility. Here's an overview of the code structure:</p>
+<h3 id="directory-structure">Directory Structure</h3>
+<details>
+<summary>Root Directory</summary>
+
+
+.
+    ├── Assets/
+    │   ├── acceleration1.gif
+    │   ├── acceleration2.gif
+    │   ├── boule1.gif
+    │   ├── boule2.gif
+    │   ├── explosion1.gif
+    │   ├── explosion2.gif
+    │   ├── test.cpp
+    │   ├── tir10.gif
+    │   ├── tir11.gif
+    │   ├── tir12.gif
+    │   ├── tir1.gif
+    │   ├── tir2.gif
+    │   ├── tir3.gif
+    │   ├── tir4.gif
+    │   ├── tir5.gif
+    │   ├── tir6.gif
+    │   ├── tir7.gif
+    │   ├── tir8.gif
+    │   ├── tir9.gif
+    │   ├── vaisseau_droite.gif
+    │   └── vaisseau_gauche.gif
+    ├── Builder/
+    │   └── builder.sh
+    ├── CMake/
+    │   └── CMakeLists.txt
+    ├── Conan/
+    │   └── conanfile.txt
+    ├── Docker/
+    │   └── Dockerfile
+    ├── ECS/
+    │   ├── AComponent.hpp
+    │   ├── CMakeLists.txt
+    │   ├── Components/
+    │   │   ├── Acceleration.hpp
+    │   │   ├── AllComponents.hpp
+    │   │   ├── Collidable.hpp
+    │   │   ├── Controllable.hpp
+    │   │   ├── Drawable.cpp
+    │   │   ├── Drawable.hpp
+    │   │   └── Position.hpp
+    │   ├── Entity.cpp
+    │   ├── Entity.hpp
+    │   ├── EntityManager.cpp
+    │   ├── EntityManager.hpp
+    │   ├── IComponent.hpp
+    │   ├── main.cpp
+    │   ├── Systems/
+    │   │   ├── ASystem.hpp
+    │   │   ├── ISystem.hpp
+    │   │   ├── MovementSystem.cpp
+    │   │   ├── MovementSystem.hpp
+    │   │   ├── RenderSystem.cpp
+    │   │   └── RenderSystem.hpp
+    │   └── test.cpp
+    ├── GUI/
+    │   ├── Audio/
+    │   │   ├── Audio.cpp
+    │   │   └── Audio.hpp
+    │   ├── CMakeLists.txt
+    │   ├── Core/
+    │   │   ├── Core.cpp
+    │   │   └── Core.hpp
+    │   ├── Entities/
+    │   │   ├── Arms/
+    │   │   │   ├── Missile.cpp
+    │   │   │   └── Missile.hpp
+    │   │   ├── Background/
+    │   │   │   ├── shooting_star.cpp
+    │   │   │   ├── shooting_star.hpp
+    │   │   │   ├── star.cpp
+    │   │   │   └── star.hpp
+    │   │   ├── Player/
+    │   │   │   ├── Player.cpp
+    │   │   │   └── Player.hpp
+    │   │   └── Power/
+    │   │       ├── Powerup.cpp
+    │   │       └── Powerup.hpp
+    │   ├── Exceptions/
+    │   │   └── Exception.hpp
+    │   ├── Interface/
+    │   │   ├── ICommunication.hpp
+    │   │   └── IRenderer.hpp
+    │   ├── main.cpp
+    │   ├── Menu/
+    │   │   ├── Menu.cpp
+    │   │   └── Menu.hpp
+    │   ├── Network/
+    │   │   ├── NetworkCli.cpp
+    │   │   └── NetworkCli.hpp
+    │   └── Renderer/
+    │       ├── Renderer.cpp
+    │       └── Renderer.hpp
+    ├── Images/
+    │   └── hh.png
+    ├── README.md
+    ├── R-TYPE_DEV_DOCUMENTATION/
+    │   ├── docs/
+    │   │   ├── about.md
+    │   │   ├── contact.md
+    │   │   ├── FAQ.md
+    │   │   ├── index.md
+    │   │   ├── installation.md
+    │   │   └── license.md
+    │   ├── mkdocs.yml
+    │   └── site/
+    ├── R-TYPE.drawio - draw.io - Google Chrome 03_10_2023 11_11_15.png:Zone.Identifier
+    ├── Server/
+    │   ├── CMakeLists.txt
+    │   ├── include/
+    │   │   ├── binary_handling.hpp
+    │   │   ├── Client_Handling.hpp
+    │   │   ├── IMessage.hpp
+    │   │   └── main_server.hpp
+    │   └── src/
+    │       └── main_server.cpp
+    └── Utils/
+        └── shared_message.hpp
+
+</details>
+
+<!-- 
+R-Type-Game/
+|-- assets/
+| |-- images/
+| |-- sounds/
+|-- src/
+| |-- engine/
+| | |-- game_engine.cpp
+| | |-- physics_engine.cpp
+| | |-- graphics_engine.cpp
+| | |-- ...
+| |-- game_logic/
+| | |-- player.cpp
+| | |-- enemy.cpp
+| | |-- ...
+| |-- networking/
+| | |-- server.cpp
+| | |-- client.cpp
+| |-- ui/
+| | |-- menu.cpp
+| | |-- hud.cpp
+|-- main.cpp
+|-- config.ini -->
+
+<ul>
+<li>
+<p><strong>Assets:</strong> This folder contains multimedia resources used in the game, such as animated images (GIFs). These visual resources are used to create in-game elements such as spaceships, projectiles, explosions, etc.</p>
+</li>
+<li>
+<p><strong>Builder:</strong> The builder.sh script is used to automate certain project build tasks. It may contain compilation, installation, or project-specific configuration commands.</p>
+</li>
+<li>
+<p><strong>CMake:</strong> This folder contains configuration files for the CMake build system, which generates the necessary build files for compiling the project.</p>
+</li>
+<li>
+<p><strong>Docker:</strong> The Dockerfile is used to create a Docker image of the project, making it easier to deploy and run the project in a containerized environment.</p>
+</li>
+<li>
+<p><strong>ECS:</strong> This folder contains the source code related to the Entity Component System (ECS) of the game. It is organized into sub-folders for components and systems of the game.</p>
+</li>
+<li>
+<p><strong>GUI:</strong> This folder contains the source code for the game client's user interface (UI). It is organized into sub-folders for different aspects of the UI, such as audio, rendering, entities, etc.</p>
+</li>
+<li>
+<p><strong>Images:</strong> This folder contains images or other visual resources that are not directly tied to the source code but can be used in documentation or for other purposes.</p>
+</li>
+<li>
+<p><strong>R-TYPE_DEV_DOCUMENTATION:</strong> As described earlier, this folder contains all the necessary files for online documentation, such as Markdown files for documentation and MkDocs configuration files.</p>
+</li>
+<li>
+<p><strong>Server:</strong> This folder contains the source code for the game server. It is organized into sub-folders for header files (include) and source files (src) of the server.</p>
+</li>
+<li>
+<p><strong>Utils:</strong> This folder contains utility or shared files that can be used in multiple parts of the project. For example, the shared_message.hpp file could contain definitions of messages shared between the client and the server.</p>
+</li>
+</ul>
+<!-- - **assets:** Contains game assets such as images and sounds.
+- **src:** Houses the C++ source code organized by modules and components.
+- **engine:** Contains core game engine components.
+- **game_logic:** Includes game-specific logic for players, enemies, and objects.
+- **networking:** Handles networking and multiplayer functionality.
+- **ui:** Manages the user interface components. -->
+
+<h2 id="classes">Classes</h2>
+<h3 id="core">Core</h3>
+<h4 id="description">Description :</h4>
+<p>La classe Core représente le cœur du système du jeu. Elle est responsable de la gestion de la logique principale du jeu.</p>
+<h4 id="methodes-principales">Méthodes Principales :</h4>
+<pre><code>Core(): Constructeur de la classe.
+~Core(): Destructeur de la classe.
+run(std::string port, std::string ip): Méthode pour exécuter le jeu en spécifiant le port et l'adresse IP.
+</code></pre>
+<h4 id="exemple-dutilisation">Exemple d'Utilisation :</h4>
+<pre><code>cpp
+
+Core gameCore;
+gameCore.run("12345", "127.0.0.1");
+</code></pre>
+<h3 id="acomponent">AComponent</h3>
+<h4 id="description_1">Description :</h4>
+<p>La classe AComponent est une classe de base abstraite pour les composants du jeu. Elle sert de classe de base pour d'autres classes de composants.</p>
+<h3 id="entity">Entity</h3>
+<h4 id="description_2">Description :</h4>
+<p>La classe Entity représente une entité dans le jeu. Une entité est un objet du jeu qui peut avoir différents composants attachés.</p>
+<h4 id="methodes-principales_1">Méthodes Principales :</h4>
+<pre><code>Entity(size_t id): Constructeur de la classe avec un identifiant unique.
+~Entity(): Destructeur de la classe.
+AddComponent(Params&amp;&amp;... args): Méthode pour ajouter un composant à l'entité.
+RemoveComponent(): Méthode pour supprimer un composant de l'entité.
+hasComp(): Méthode pour vérifier si l'entité a un composant donné.
+getComponent(): Méthode pour obtenir un composant spécifique de l'entité.
+nbComps(): Méthode pour obtenir le nombre de composants attachés à l'entité.
+</code></pre>
+<h4 id="exemple-dutilisation_1">Exemple d'Utilisation :</h4>
+<pre><code>cpp
+
+Entity playerEntity(1);
+playerEntity.AddComponent&lt;Position&gt;(10.0f, 20.0f);
+if (playerEntity.hasComp&lt;Position&gt;()) {
+    auto positionComponent = playerEntity.getComponent&lt;Position&gt;();
+    // Utilisation du composant de position
+}
+</code></pre>
+<h3 id="entitymanager">EntityManager</h3>
+<h3 id="description_3">Description :</h3>
+<p>La classe EntityManager est responsable de la gestion des entités du jeu, de leur création et de leur destruction.</p>
+<h3 id="methodes-principales_2">Méthodes Principales :</h3>
+<pre><code>EntityManager(): Constructeur de la classe.
+~EntityManager(): Destructeur de la classe.
+removeElement(Entity valueToRemove): Méthode pour supprimer une entité de la liste.
+createEntity(): Méthode pour créer une nouvelle entité.
+DestroyEntity(Entity id): Méthode pour détruire une entité par son identifiant.
+getEntityById(size_t id): Méthode pour obtenir une entité par son identifiant.
+getEntities(): Méthode pour obtenir la liste des entités.
+</code></pre>
+<h4 id="exemple-dutilisation_2">Exemple d'Utilisation :</h4>
+<pre><code>cpp
+
+EntityManager entityManager;
+Entity playerEntity = entityManager.createEntity();
+entityManager.DestroyEntity(playerEntity.getId());
+</code></pre>
+<h3 id="shootingstar">ShootingStar</h3>
+<h4 id="description_4">Description :</h4>
+<p>La classe ShootingStar représente une étoile filante dans le jeu. Une étoile filante se déplace à travers l'écran avec une vitesse donnée et peut être mise à jour et dessinée.</p>
+<h4 id="methodes-principales_3">Méthodes Principales :</h4>
+<pre><code>ShootingStar(float windowWidth, float windowHeight): Constructeur de la classe qui prend la largeur et la hauteur de la fenêtre du jeu comme paramètres.
+void update(float deltaTime): Méthode pour mettre à jour la position de l'étoile filante en fonction du temps écoulé depuis la dernière mise à jour.
+void draw(sf::RenderWindow&amp; window): Méthode pour dessiner l'étoile filante sur la fenêtre du jeu.
+bool isFinished() const: Méthode pour vérifier si l'étoile filante a terminé son trajet.
+</code></pre>
+<h4 id="exemple-dutilisation_3">Exemple d'Utilisation :</h4>
+<pre><code>cpp
+
+ShootingStar star(800.0f, 600.0f);
+star.update(0.1f); // Mettre à jour la position de l'étoile filante
+if (star.isFinished()) {
+    // L'étoile filante a terminé son trajet
+}
+</code></pre>
+<h3 id="star">Star</h3>
+<h4 id="description_5">Description :</h4>
+<p>La classe Star représente une étoile dans le jeu. Les étoiles sont des objets statiques qui peuvent être mises à jour et dessinées.</p>
+<h4 id="methodes-principales_4">Méthodes Principales :</h4>
+<pre><code>Star(float windowWidth, float windowHeight, float depth): Constructeur de la classe qui prend la largeur et la hauteur de la fenêtre du jeu, ainsi que la profondeur de l'étoile comme paramètres.
+void update(float deltaTime): Méthode pour mettre à jour l'étoile en fonction du temps écoulé depuis la dernière mise à jour.
+void draw(sf::RenderWindow&amp; window): Méthode pour dessiner l'étoile sur la fenêtre du jeu.
+sf::Vector2f getPosition() const: Méthode pour obtenir la position actuelle de l'étoile.
+</code></pre>
+<h4 id="exemple-dutilisation_4">Exemple d'Utilisation :</h4>
+<pre><code>cpp
+
+Star star(800.0f, 600.0f, 1.0f);
+star.update(0.1f); // Mettre à jour l'étoile
+sf::Vector2f position = star.getPosition();
+</code></pre>
+<h2 id="code-conventions-and-best-practices">Code Conventions and Best Practices</h2>
+<p>To maintain code quality and consistency, we follow these coding conventions and best practices:</p>
+<ul>
+<li>C++ code adheres to industry-standard coding practices.</li>
+<li>Meaningful variable and function names.</li>
+<li>Extensive use of comments and documentation.</li>
+<li>Unit tests for critical components.</li>
+<li>Git version control with clear commit messages.</li>
+<li>Code reviews for contributions to ensure quality and conformity.</li>
+</ul>
+<p>By adhering to these conventions and best practices, we ensure that the codebase remains maintainable and welcoming to new developers.</p>
+<h2 id="tutorials-and-how-tos">Tutorials and How-To's</h2>
+<p>To help you get started with contributing to the R-TYPE project in C++, we've prepared a set of tutorials and how-to guides. These resources will walk you through common development tasks and provide step-by-step instructions.</p>
+<ul>
+<li><a href="tutorials/enemy_creation.md">How to Implement a New Enemy Type</a></li>
+<li><a href="tutorials/multiplayer_setup.md">Setting Up Multiplayer and Networking</a></li>
+<li><a href="tutorials/level_design.md">Adding New Game Levels</a></li>
+</ul>
+<h2 id="contribution-guidelines">Contribution Guidelines</h2>
+<p>We welcome contributions from C++ developers who are passionate about enhancing the R-TYPE game. Before you start, please review our <a href="CONTRIBUTING.md">contribution guidelines</a> to understand our processes and expectations.</p>
               
             </div>
           </div><footer>

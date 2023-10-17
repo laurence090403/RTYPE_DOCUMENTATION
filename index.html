@@ -42,9 +42,21 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href=".">Getting Started Guide</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a>
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-r-type">What is R-TYPE? 🕹️</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
+    <li class="toctree-l2"><a class="reference internal" href="#system-requirements">System Requirements 🖥️</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation 🚀</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started 🎮</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#multiplayer-adventure">Multiplayer Adventure 🌟</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#architectural-patterns">Architectural Patterns 🏗️</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#need-help">Need Help? 🆘</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conclusion">Conclusion 🌌</a>
     </li>
     </ul>
                 </li>
@@ -92,87 +104,58 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="r-type-documentation">R-TYPE DOCUMENTATION</h1>
-                <h2>Get Started with R-TYPE: Your Epic Space Adventure Begins 🚀</h2>
+                <h1 id="get-started-with-r-type-your-epic-space-adventure-begins">Get Started with R-TYPE: Your Epic Space Adventure Begins 🚀</h1>
 <p>Welcome to the world of R-TYPE, an iconic Horizontal Shmup (Shoot’em’up) game that captured the hearts of gamers in the '90s. In this project, you have the exciting opportunity to create your own version of R-TYPE, adding new dimensions to the classic gameplay.</p>
-<h2 id="commands">What is R-TYPE? 🕹️</h2>
+<h2 id="what-is-r-type">What is R-TYPE? 🕹️</h2>
 <p>The project aims to develop a multithreaded server and a graphical client in C++ for the video game R-Type, using a custom-designed game engine. R-Type is a popular horizontal shoot'em up game from the 90s, and in this project, we will create a networked version of the game where one to four players will be able to fight the enemy Bydos together. The internal design of the game should demonstrate architectural patterns of a real game engine. The project will be implemented using CMake as the build tool, and all relevant source files, excluding unnecessary files such as binaries, temporary files, and object files, should be included in the delivery. The project will be divided into two phases: first, developing the core architecture of the game to create a functional prototype, and then expanding several aspects of the prototype to the next level by exploring specialized areas of choice from a list of proposed options.</p>
-<h2>System Requirements 🖥️</h2>
-
+<h2 id="system-requirements">System Requirements 🖥️</h2>
 <p>Before you embark on your space adventure, make sure your system meets the following requirements:</p>
-
 <ul>
-    <li><strong>Operating System:</strong> Windows 10 / 11 or Linux (Fedora, Ubuntu...)</li>
-    <li><strong>Dependencies system:</strong> Conan</li>
-    <li><strong>Dependencies:</strong> g++</li>
-    <li><strong>Compiler:</strong> CMake (3.25.0)</li>
-    <li><strong>Network:</strong> Broadband internet connection</li>
+<li><strong>Operating System:</strong> Windows 10 / 11 or Linux (Fedora, Ubuntu...)</li>
+<li><strong>Dependencies system:</strong> Conan</li>
+<li><strong>Dependencies:</strong> g++</li>
+<li><strong>Compiler:</strong> CMake (3.25.0)</li>
+<li><strong>Network:</strong> Broadband internet connection</li>
 </ul>
-
-<h2>Installation 🚀</h2>
-
+<h2 id="installation">Installation 🚀</h2>
 <p>To begin your mission, follow these installation steps:</p>
-
 <ol>
-    <li><strong>Download Windows 11:</strong>
-        <ul>
-            <li>Visit <a href="https://www.microsoft.com/fr-fr/software-download/windows11">Download Windows 11</a> to download the latest version of Windows.</li>
-        </ul>
-    </li>
-    <li><strong>Install CMake:</strong>
-        <ul>
-            <li>Install <a href="https://www.kitware.com/cmake-3-25-0-available-for-download/">Cmake (3.25.0)</a> to compile the game.</li>
-        </ul>
-    </li>
-    <li><strong>Download Visual Studio:</strong>
-        <ul>
-            <li>After installation of Cmake, download <a href="https://visualstudio.microsoft.com/fr/downloads/">Visual Studio</a> to compile on Windows. It's verry IMPORTANT.</li>
-        </ul>
-    </li>
-    <li><strong>Install Conan:</strong>
-        <ul>
-            <li>Download <a href="https://docs.conan.io/2/installation.html">Conan</a> to install all the dependencies of the project (R-TYPE).</li>
-        </ul>
-    </li>
+<li><strong>Download Windows 11:</strong></li>
+<li>
+<p>Visit  <a href="https://www.microsoft.com/fr-fr/software-download/windows11">Download Windows 11</a> to download the latest version of Windows.</p>
+</li>
+<li>
+<p><strong>Install CMake:</strong></p>
+</li>
+<li>
+<p>Install <a href="https://www.kitware.com/cmake-3-25-0-available-for-download/">Cmake (3.25.0)</a> to compile the game.</p>
+</li>
+<li>
+<p><strong>Download Visual Studio:</strong></p>
+</li>
+<li>
+<p>After installation of Cmake, download <a href="https://visualstudio.microsoft.com/fr/downloads/">Visual Studio</a> to compile on Windows. It's verry IMPORTANT.</p>
+</li>
+<li>
+<p><strong>Install Conan:</strong></p>
+</li>
+<li>Download <a href="https://docs.conan.io/2/installation.html">Conan</a> to install all the dependencies of the project (R-TYPE).</li>
 </ol>
-
-<h2>Getting Started 🎮</h2>
-
+<h2 id="getting-started">Getting Started 🎮</h2>
 <p>Now that you're ready to embark on your intergalactic journey, here's a quick overview of the basic controls:</p>
-
 <ul>
-    <li><strong>Movement:</strong> Use the arrow keys or WASD to maneuver your spacecraft.</li>
-    <li><strong>Firing:</strong> Press the Spacebar to unleash powerful shots against your enemies.</li>
-    <li><strong>Special Abilities:</strong> Different spacecraft come with unique abilities. Experiment to discover your ship's special powers.</li>
+<li><strong>Movement:</strong> Use the arrow keys or WASD to maneuver your spacecraft.</li>
+<li><strong>Firing:</strong> Press the Spacebar to unleash powerful shots against your enemies.</li>
+<li><strong>Special Abilities:</strong> Different spacecraft come with unique abilities. Experiment to discover your ship's special powers.</li>
 </ul>
-
-<h2>Multiplayer Adventure 🌟</h2>
-
+<h2 id="multiplayer-adventure">Multiplayer Adventure 🌟</h2>
 <p>R-TYPE isn't just a solo mission. It's a networked game that allows you to team up with one to four players to combat the evil Bydos together. Gather your friends and strategize to save the galaxy!</p>
-
-<h2>Architectural Patterns 🏗️</h2>
-
+<h2 id="architectural-patterns">Architectural Patterns 🏗️</h2>
 <p>As you dive deeper into R-TYPE's development, explore the internal design, which showcases architectural patterns of a real game engine. You'll gain valuable insights into game development while creating your masterpiece.</p>
-
-<h2>Need Help? 🆘</h2>
-
-<p>If you encounter any challenges or have questions about R-TYPE, don't hesitate to reach out to our supportive community. Visit our <a href="FAQ.md">FAQ</a> or <a href="contact.md">contact</a> our dedicated support team at <a href="mailto:bridge.atindokpo@epitech.eu">bridge.atindokpo@epitech.eu</a>.</p>
-
-<h2>Conclusion 🌌</h2>
-
+<h2 id="need-help">Need Help? 🆘</h2>
+<p>If you encounter any challenges or have questions about R-TYPE, don't hesitate to reach out to our supportive community. Visit our <a href="FAQ/">FAQ</a> or <a href="contact/">contact</a> our dedicated support team at <a href="">bridge.atindokpo@epitech.eu</a></p>
+<h2 id="conclusion">Conclusion 🌌</h2>
 <p>Your journey with R-TYPE is just beginning. Get ready to relive the excitement of classic gaming while adding your own unique twist to this beloved title. Start your engines, pilot your ship, and brace yourself for an unforgettable space adventure!</p>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
               
             </div>
           </div><footer>
@@ -221,5 +204,5 @@ docs/
 
 <!--
 MkDocs version : 1.5.3
-Build Date UTC : 2023-10-03 18:55:03.638759+00:00
+Build Date UTC : 2023-10-17 12:45:49.983727+00:00
 -->
